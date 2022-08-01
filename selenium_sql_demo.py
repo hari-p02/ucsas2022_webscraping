@@ -5,7 +5,6 @@ import time
 import sqlite3
 
 def highlight(element, color, border):
-    """Highlights (blinks) a Selenium Webdriver element"""
     driver = element._parent
     def apply_style(s):
         driver.execute_script("arguments[0].setAttribute('style', arguments[1]);",
@@ -111,4 +110,3 @@ conn.close()
 time.sleep(2)
 
 driver.close()
-

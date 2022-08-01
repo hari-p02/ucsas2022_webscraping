@@ -1,0 +1,60 @@
+---
+title: "Web Scraping in Python"
+author: "Hari Patchigolla"
+date: "8/1/2022"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Table of Contents
+
+
+1. Introduction to Web Scraping
+
+    - What is Web Scraping?
+    - Data Science Pipeline
+    - Where does Web Scraping fit in the Data Science Pipeline?
+
+2. Requests and BeautifulSoup
+
+    - How does Web Scraping work?
+    - Static Web Scraping with BeautifulSoup
+      - Scraping MLS data
+
+3. Selenium and SQL (sqlite3)
+
+    - How to create web scraping bots
+    - Storing scraped data in an SQL database
+ 
+4. Legality of Web Scraping
+
+    - When is it okay to Scrape a website
+      - Consequences of scraping a website you are not allowed to scrape
+    - Easy ways to know if a website is okay to scrape
+      - `/robots.txt`
+      - How to read a `robots.txt` file
+
+
+# Introduction to Web Scraping
+
+## What is Web Scraping?
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
