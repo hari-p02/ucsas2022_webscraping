@@ -53,8 +53,8 @@ cur.execute("""CREATE TABLE player_info (
 PATH = 'chromedriver_win32\chromedriver.exe'
 service = Service(PATH)
 driver = webdriver.Chrome(service=service)
-driver.get('https://www.nfl.com/stats/player-stats/')
-time.sleep(2)
+driver.get('https://www.nfl.com/stats/player-stats/category/passing/2021/pre/all/passingyards/desc')
+time.sleep(6)
 
 
 popup_later = driver.find_element(By.CSS_SELECTOR, "#onesignal-slidedown-cancel-button")

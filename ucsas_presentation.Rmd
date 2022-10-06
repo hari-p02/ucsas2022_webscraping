@@ -2,7 +2,7 @@
 title: "Web Scraping in Python"
 author: "Hari Patchigolla"
 date: "8/1/2022"
-output: slidy_presentation
+output: beamer_presentation
 ---
 
 ```{r setup, include=FALSE}
@@ -12,24 +12,25 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Table of Contents
 
 
-1. Introduction to Web Scraping
+1. Introduction to Web Scraping (~15 mins)
 
     - What is Web Scraping?
     - Data Science Pipeline
       - Where does Web Scraping fit in the Data Science Pipeline?
-
-2. `Requests` and `BeautifulSoup`
-
+    - HTML & CSS
     - How does Web Scraping work?
+
+2. `Requests` and `BeautifulSoup` (~25 mins)
+
     - Static Web Scraping with `BeautifulSoup`
       - Scraping MLS data
 
-3. `Selenium` and SQL (sqlite3)
+3. `Selenium` and `SQL (sqlite3)` (~5 mins)
 
     - How to create web scraping bots
     - Storing scraped data in an SQL database
  
-4. Legality of Web Scraping
+4. Legality of Web Scraping (~5 mins)
 
     - When is it okay to Scrape a website
       - Consequences of scraping a website you are not allowed to scrape
@@ -47,13 +48,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <center>
 
-![HTML document of Yordan Alvarez's stats](./images/html_doc.png){width=75%}
+![HTML document of Tom Brady's Info](./images/html_doc.png){width=75%}
 
 </center>
 <br>
 
 - Notice that all visible information can be located somewhere in the HTML document
-    - Web scraping takes advantage if this by located this information ina  webpage
+
 
 ## Data Science Pipeline
 
@@ -62,47 +63,29 @@ knitr::opts_chunk$set(echo = FALSE)
 ![The Data Science Pipeline](./images/datasci_pipeline.png){width=45%}
 </center>
 
-- Where does Web Scraping fit in the Data Science Pipeline?
-    - Built in Data sets
-      - Sci-kit Learn
-      - R packages
-    - Data sets Online
-      - Kaggle
-      - Government sites
+## Where does Web Scraping fit in the Data Science Pipeline?
+
+- Web Scraping is intended for the second step of gathering the data
+- Allows you to choose your own data source
+    - More relevant data
+
+- Not limited to pre-made datasets
+
+- Automate extraction process
+    - Reduces a lot of manual work
+
+- Accurate data collection and easy to implement
 
 - Data is Everywhere
   - We can make out own datasets
-
-## `Requests` and `BeautifulSoup`
-
-<center>
-
-![`requests`](./images/requests.png){width=15%}
-
-</center>
-
-- The `requests` library is used to make HTTP requests in Python
-  - Can be used to get the HTML document/content of a webpage
-
-<center>
-
-![`BeautifulSoup`](./images/bsoup.png){width=30%}
-
-</center>
-
-- The `BeautifulSoup` library is used to parse through HTML documents
-  - Can locate specific parts of a webpage (useful for extracting data)
   
-## Web Scraping Pipeline
-
-1. Use the `requests` library to make an HTTP GET request
-    - This GET request will return the HTML content of a webpage
-    
-2. Parse through the HTML and extract specific data with the `BeautifulSoup` package
-    - Use CSS Selectors for identifying and extract these specific parts of the HTML document
-
-3. Store the data
-    - We will be using the `pandas` package in this presentation
+## How does Web Scraping Work?
+- There are 4 main steps:
+1) Find a data source (a webpage)
+2) Get the HTML of the webpage
+3) Parse through the HTML and locate where specific data is
+  - CSS Selectors
+4) Store your data
 
 <center>
 
@@ -110,18 +93,68 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </center>
 
-**DEMO**
+## HTML & CSS
 
-## `Selenium` and SQL (sqlite3)
+- HTML tells the web browser how to display media/data onto a webpage.
+- CSS specifies the visual layout and aesthetics of a webpage.
+
+
+<center>
+
+![HTML Syntax](./images/html.PNG){width=58%}
+![CSS Selectors](./images/css.PNG)
+
+</center>
+
+# `Requests` and `BeautifulSoup`
+
+## `Requests`
+
+<center>
+
+![`requests`](./images/requests.png){width=15%}
+
+</center>
+
+- The `requests` library is used to make HTTP GET requests in Python
+  - Can be used to get the HTML document/content of a webpage
+
+## `BeautifulSoup`
+
+<center>
+
+![`BeautifulSoup`](./images/bsoup.png){width=30%}
+
+</center>
+
+- The `BeautifulSoup` library is used to parse through HTML documents by taking in CSS Selectors
+  - Can locate specific parts of a webpage (useful for extracting data)
+  
+## `Pandas`
+
+<center>
+
+![`Pandas`](./images/pandas_white.png){width=30%}
+
+</center>
+
+- The `pandas` library is used to store data into a file (.csv, .xlx, etc.)
+
+
+# `Selenium` and `SQL (sqlite3)`
+
+## `Selenium`
 
 - `Selenium` is used to interact with webpages via creating bots
-- Allows use to dymanically scrape data
+  - Uses a chrome executable/driver to interact with a webpage
 
 <center>
 
 ![Selenium](./images/selenium.png){width=30%}
 
 </center>
+
+## `SQL (sqlite3)`
 
 - SQL (Structured Query Language)
   - A lot of data is stored in databases, SQL allows us to interact with this data
@@ -132,7 +165,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </center>
 
-**DEMO**
 
 ## Legality of Web Scraping
 
@@ -156,8 +188,9 @@ knitr::opts_chunk$set(echo = FALSE)
 <br>
 [https://facebook.com/robots.txt](https://facebook.com/robots.txt)
 
-  
-**DEMO**
+## Resources
+
+(add relevant links/references)
 
 
 
