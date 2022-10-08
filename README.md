@@ -1,3 +1,3 @@
-# ucsas2022_webscraping
+# UCSAS2022_webscraping
 
-More info coming soon...
+Welcome! In this workshop we will be discussing Web Scraping for Sports Data. Make sure you are registered for [UCSAS](https://statds.org/events/ucsas2022/program.html) and more details on the workshop can be found [here](https://statds.org/events/ucsas2022/workshops.html#webscraping)!  
