@@ -1,7 +1,7 @@
 ---
-title: "Web Scraping in Python"
+title: "Web Scraping for Sports Data in Python"
 author: "Hari Patchigolla"
-date: "8/1/2022"
+date: "10/08/2022"
 output: beamer_presentation
 ---
 
@@ -74,10 +74,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - Automate extraction process
     - Reduces a lot of manual work
 
-- Accurate data collection and easy to implement
+- Accurate data collection and easy to implement.
 
 - Data is Everywhere
-  - We can make out own datasets
+  - We can make out own datasets.
   
 ## How does Web Scraping Work?
 - There are 4 main steps:
@@ -116,8 +116,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </center>
 
-- The `requests` library is used to make HTTP GET requests in Python
-  - Can be used to get the HTML document/content of a webpage
+- The `requests` library is used to make HTTP GET requests in Python.
+  - Can be used to get the HTML document/content of a webpage.
 
 ## `BeautifulSoup`
 
@@ -127,8 +127,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </center>
 
-- The `BeautifulSoup` library is used to parse through HTML documents by taking in CSS Selectors
-  - Can locate specific parts of a webpage (useful for extracting data)
+- The `BeautifulSoup` library is used to parse through HTML documents by taking in CSS Selectors.
+  - Can locate specific parts of a webpage (useful for extracting data).
   
 ## `Pandas`
 
@@ -138,30 +138,30 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </center>
 
-- The `pandas` library is used to store data into a file (.csv, .xlx, etc.)
+- The `pandas` library is used to store data into a file (.csv, .xlx, etc.).
 
 
 # `Selenium` and `SQL (sqlite3)`
 
 ## `Selenium`
 
-- `Selenium` is used to interact with webpages via creating bots
-  - Uses a chrome executable/driver to interact with a webpage
+- `Selenium` is used to interact with webpages via creating bots.
+  - Uses a chrome executable/driver to interact with a webpage.
 
 <center>
 
-![Selenium](./images/selenium.png){width=30%}
+![`Selenium`](./images/selenium.png){width=30%}
 
 </center>
 
 ## `SQL (sqlite3)`
 
-- SQL (Structured Query Language)
-  - A lot of data is stored in databases, SQL allows us to interact with this data
+- SQL (Structured Query Language).
+  - A lot of data is stored in databases, SQL allows us to interact with this data.
 
 <center>
 
-![Selenium](./images/sql.png){width=30%}
+![`SQL`](./images/sql.png){width=30%}
 
 </center>
 
@@ -176,7 +176,7 @@ knitr::opts_chunk$set(echo = FALSE)
   - [Meta Files Two Lawsuits Over Illicit Data Scraping from Facebook and Instagram](https://www.spiceworks.com/tech/tech-general/news/meta-sues-for-data-scraping/)
   - [Supreme Court Grants Certiorari in Web Scraping Case hiQ v. LinkedIn](https://www.lowenstein.com/news-insights/publications/client-alerts/supreme-court-grants-certiorari-in-web-scraping-case-hiq-v-linkedin-tech-groupwhite-collar)
 
-- What is a easy way to tell if you can or cannot scrape a certain website
+- What is a easy way to tell if you can or cannot scrape a certain website?
   - `/robots.txt` file
   
   
@@ -190,7 +190,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Resources
 
-(add relevant links/references)
+- How to Read robots.txt: https://www.seerinteractive.com/blog/how-to-read-robots-txt/#crawl-delay
+<br>
+- BeautifulSoup: https://realpython.com/beautiful-soup-web-scraper-python/
+<br>
+- BeautifulSoup Docs: https://beautiful-soup-4.readthedocs.io/en/latest/
+<br>
+- More Deatials on Web Scraping: https://www.scrapingbee.com/blog/web-scraping-101-with-python/
+<br>
+- Selenium: https://selenium-python.readthedocs.io/
+
 
 
 
